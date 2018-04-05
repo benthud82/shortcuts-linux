@@ -1,6 +1,9 @@
 //Copies all files from the hep folder in the bucket to server
 gsutil -m cp -r gs://heatmapslotting.com/hep/ /var/www/html/
 
+//to copy one folder from bucket to corresponding folder on server
+gsutil -m cp -r gs://heatmapslotting.com/hep/MySQLUpdates /var/www/html/hep/
+
 //To view possible errors that don't show in the console
 //Navigate to directory
 cd /var/log/apache2
